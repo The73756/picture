@@ -211,6 +211,15 @@ h4 {
   /* Making it beautiful */
 
 }
+
+.main-slider {
+  overflow: hidden;
+}
+
+.main-slider-item img {
+  max-width: 100vw;
+}
+
 .main .file_upload {
   position: relative;
   overflow: hidden;
@@ -1724,4 +1733,9 @@ h4 {
     padding: 3rem 3rem;
     width: 25rem;
   }
+}
+
+.disable-scroll {
+  overflow: hidden;
+  margin-right: var(--scrollWidth);
 }
