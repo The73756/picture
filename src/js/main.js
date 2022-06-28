@@ -3,6 +3,7 @@ import sliders from './modules/sliders';
 import forms from './modules/forms';
 import mask from './modules/mask';
 import validateTextInputs from './modules/validateTextInputs';
+import showMoreStyles from './modules/showMoreStyles';
 
 window.addEventListener('DOMContentLoaded', () => {
 	modals();
@@ -12,4 +13,5 @@ window.addEventListener('DOMContentLoaded', () => {
 	mask('[name="phone"]');
 	validateTextInputs('[name="name"]');
 	validateTextInputs('[name="message"]');
+	showMoreStyles('.button-styles', '#styles .row');
 });
