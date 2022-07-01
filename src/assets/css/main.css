@@ -914,10 +914,31 @@ h4 {
 .often-questions .accordion-heading span {
   border-bottom: 2px dotted #333;
 }
+.often-questions p.active-style span {
+  color: #E950D7;
+  font-weight: 900;
+  text-decoration: none;
+  border: 0;
+}
+.often-questions .accordion-heading.active+.accordion-block {
+  display: block;
+}
 .often-questions .accordion-block {
-  margin-top: 1rem;
   background-color: #f7e7e6;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-out, max-height 0.3s ease-out;
+
+  overflow: hidden;
+}
+.often-questions .accordion-block.active-block {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  overflow: visible;
   padding: 3rem 4rem;
+  margin-top: 1rem;
 }
 .often-questions .accordion-block:before {
   content: '';
