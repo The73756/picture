@@ -8,6 +8,7 @@ import calc from './modules/calc';
 import filter from './modules/filter';
 import changeImg from './modules/changeImg';
 import accordion from './modules/accordion';
+import burger from './modules/burger';
 
 window.addEventListener('DOMContentLoaded', () => {
 	modals();
@@ -22,4 +23,5 @@ window.addEventListener('DOMContentLoaded', () => {
 	filter();
 	changeImg('.sizes-block');
 	accordion('.accordion-heading');
+	burger('.burger-menu', '.burger');
 });
