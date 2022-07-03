@@ -9,6 +9,7 @@ import filter from './modules/filter';
 import changeImg from './modules/changeImg';
 import accordion from './modules/accordion';
 import burger from './modules/burger';
+import smoothScroll from './modules/smoothScroll';
 
 window.addEventListener('DOMContentLoaded', () => {
 	modals();
@@ -24,4 +25,5 @@ window.addEventListener('DOMContentLoaded', () => {
 	changeImg('.sizes-block');
 	accordion('.accordion-heading');
 	burger('.burger-menu', '.burger');
+	smoothScroll('.pageup');
 });
