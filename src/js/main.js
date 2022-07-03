@@ -10,6 +10,7 @@ import changeImg from './modules/changeImg';
 import accordion from './modules/accordion';
 import burger from './modules/burger';
 import smoothScroll from './modules/smoothScroll';
+import drop from './modules/drop';
 
 window.addEventListener('DOMContentLoaded', () => {
 	modals();
@@ -26,4 +27,5 @@ window.addEventListener('DOMContentLoaded', () => {
 	accordion('.accordion-heading');
 	burger('.burger-menu', '.burger');
 	smoothScroll('.pageup');
+	drop();
 });
